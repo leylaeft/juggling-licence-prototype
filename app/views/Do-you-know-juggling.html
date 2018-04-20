@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Question page
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <a class="link-back" href="/url/of/previous/page">Back</a>
+
+
+      <form class="form" action="/Do-you-know-juggling" method="post">
+
+        <div class="form-group">
+           <fieldset>
+
+             <legend>
+               <h1 class="heading-large">Do you know juggling?</h1>
+             </legend>
+
+             <div class="multiple-choice">
+               <input id="radio-1" type="radio" name="juggling-balls1" value="yes" {{ checked("juggling-balls1", "yes")}}>
+               <label for="radio-1">yes</label>
+             </div>
+             <div class="multiple-choice">
+               <input id="radio-2" type="radio" name="juggling-balls1" value="no" {{ checked("juggling-balls1", "no")}}>
+               <label for="radio-2">no</label>
+             </div>
+           </div>
+
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+{% endblock %}
