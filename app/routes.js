@@ -18,7 +18,7 @@ router.post('/juggling-balls-answer',function(req, res){
 })
 
 // add your routes here
-router.post('/do-you-know-juggling',function(req, res){
+router.post('/do-you-know-juggling-2',function(req, res){
   var jugglingBalls1 = req.session.data['juggling-balls1']
 
   if (jugglingBalls1 == "yes"){
